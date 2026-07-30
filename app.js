@@ -2,7 +2,7 @@ const menu = {
   burgers: [
     ['Классик Бургер', 'Сочная говяжья котлета, сыр чеддер, овощи и фирменный соус.', 300, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85'],
     ['Чизбургер', 'Двойной сыр, говядина, огурчики и мягкая булочка бриошь.', 330, 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=85'],
-    ['Биг Али Бургер', 'Две котлеты, хрустящий бекон, много сыра и соус.', 450, 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=700&q=85'],
+    ['Биг Бургер', 'Две котлеты, хрустящий бекон, много сыра и соус.', 450, 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=700&q=85'],
     ['Острый Бургер', 'Говядина, халапеньо, острый соус и сыр.', 380, 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=85'],
     ['Куриный Бургер', 'Хрустящая куриная котлета, салат и соус.', 280, 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=85']
   ],
@@ -28,7 +28,7 @@ const menu = {
     ['Шаурма Гигант', 'Двойная порция курицы, овощи, соус.', 280, 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=85']
   ],
   sets: [
-    ['Сет Али СҮЙҮҮ', 'Два бургера, фри и два напитка для идеального вечера.', 1200, 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=700&q=85'],
+    ['Сет СҮЙҮҮ', 'Два бургера, фри и два напитка для идеального вечера.', 1200, 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=700&q=85'],
     ['Сет Классик', 'Классик Бургер, картофель фри и напиток на выбор.', 480, 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=700&q=85'],
     ['Сет Семейный', 'Большая пицца, шаурма, фри и 4 напитка.', 1500, 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=85'],
     ['Сет Друзьям', '4 ролла, крылышки BBQ и напитки.', 1100, 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=700&q=85']
