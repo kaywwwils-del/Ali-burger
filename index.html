@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171717" />
+  <title>ALI BURGER — Даамдуу фаст-фуд | Ноокат</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="ALI BURGER NOOKAT">
+      <span class="brand-icon"><i></i><i></i><i></i></span>
+      <span>ALI <b>BURGER</b><small>NOOKAT</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#top">Башкы</a>
+      <a href="#menu">Меню</a>
+      <a href="#offers">Акциялар</a>
+      <a href="#delivery">Жеткирүү</a>
+      <a href="#about">Биз жөнүндө</a>
+      <a href="#contacts">Байланыш</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search">
+        <span>⌕</span>
+        <input aria-label="Издөө" placeholder="Издөө (пицца, бургер...)" />
+      </label>
+      <button class="cart-button" onclick="toggleCart()" aria-label="Себетти ачуу">
+        <span class="bag">🛒</span>
+        <span class="cart-label">Себет <b id="cart-count">0</b></span>
+        <small id="cart-sum">0 KGS</small>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p>НООКАТТАГЫ ЭҮ ДААМДУУ</p>
+        <h1>ЫСЫК, ТЕЗ, ДААМДУУ</h1>
+        <span>ПИЦЦА · БУРГЕР · РОЛЛДОР · ШАУРМА</span>
+        <a href="#menu" class="hero-cta">Менюну көрүү <b>→</b></a>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="section menu-section" id="menu">
+      <div class="section-title">
+        <div>
+          <p>БИЗДИН МЕНЮ</p>
+          <h2>Сиз каалаган даамдар</h2>
+        </div>
+        <span>24/7 Жеткирүү Ноокатта</span>
+      </div>
+
+      <div class="category-tabs">
+        <button class="active" data-category="burgers">Бургерлер</button>
+        <button data-category="pizza">Пицца</button>
+        <button data-category="rolls">Роллдор</button>
+        <button data-category="shawarma">Шаурма</button>
+        <button data-category="sets">Сеттер</button>
+        <button data-category="drinks">Суусундуктар</button>
+      </div>
+
+      <div class="products" id="menu-list"></div>
+    </section>
+
+    <!-- PROMO OFFER -->
+    <section class="offer" id="offers">
+      <div>
+        <span>АКЦИЯ</span>
+        <h2>Комбо <em>АЛИ СҮЙҮҮ</em></h2>
+        <p>Пицца, бургер, фри жана суусундуктар — досторго эң сонун!</p>
+        <button onclick="addItem('sets', 0)">Заказ берүү — 1200 KGS</button>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+      <div class="about-photo"></div>
+      <div class="about-copy">
+        <p>БИЗ ЖӨНҮНДӨ</p>
+        <h2>Сүйүү менен даярдайбыз</h2>
+        <p class="large">«Алибургер» — ширелүү бургерлер, ысык пицца, жаңы роллдор, даамдуу шаурма. Ар дайым жаңы азыктардан, тез жана сапаттуу.</p>
+        <a href="#contacts">Кененирээк <b>→</b></a>
+      </div>
+    </section>
+
+    <!-- LOCATION & DELIVERY SECTION -->
+    <section class="location" id="delivery">
+      <div class="section-title">
+        <div>
+          <p>КЕЛИҢИЗДЕР</p>
+          <h2>Биз кайдабыз?</h2>
+        </div>
+        <span>Иштөө 24/7</span>
+      </div>
+      <div class="map">
+        <div class="map-card">
+          <strong>ALI BURGER</strong>
+          <span>Ата Мерек көч., 7 (Ноокат)</span>
+          <a href="https://maps.google.com/?q=Nookat" target="_blank" rel="noreferrer">Картаны ачуу →</a>
+        </div>
+        <span class="map-pin">●</span>
+        <span class="road r1"></span>
+        <span class="road r2"></span>
+        <span class="road r3"></span>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacts">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-icon"><i></i><i></i><i></i></span>
+        <span>ALI <b>BURGER</b><small>NOOKAT</small></span>
+      </a>
+      <p>Эң даамдуу фаст-фуд<br>Ноокаттын дал борборунда.</p>
+    </div>
+    <div>
+      <h3>МЕНЮ</h3>
+      <a href="#menu">Пицца</a>
+      <a href="#menu">Бургерлер</a>
+      <a href="#menu">Роллдор</a>
+      <a href="#menu">Шаурма</a>
+    </div>
+    <div>
+      <h3>БАЙЛАНЫШ</h3>
+      <a href="https://wa.me/996502568696" target="_blank">WhatsApp</a>
+      <a href="#top">Instagram</a>
+      <a href="tel:+996502568696">+996 502 568 696</a>
+    </div>
+    <div>
+      <h3>АДРЕС</h3>
+      <p>Ата Мерек көч., 7<br>Ноокат шаары</p>
+      <h3 class="delivery-heading">ЖЕТКИРҮҮ</h3>
+      <b>24/7 Круглосуточно</b>
+    </div>
+  </footer>
+
+  <!-- CART PANEL (SIDEBAR) -->
+  <aside class="cart-panel" id="cart-panel" aria-label="Себет">
+    <div class="cart-head">
+      <div>
+        <p>СИЗДИН ЗАКАЗ</p>
+        <h2>Себет</h2>
+      </div>
+      <button onclick="toggleCart()" aria-label="Жабуу">×</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="empty">Себет азырынча бош.<br>Менюдан даамдуу нерсе тандаңыз!</p>
+    </div>
+    <div class="cart-footer">
+      <div>
+        <span>Жалпы сумма:</span>
+        <strong id="cart-total">0 KGS</strong>
+      </div>
+      <button onclick="orderWhatsApp()">WhatsApp аркылуу заказ кылуу</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+  <!-- MOBILE ORDER BUTTON -->
+  <button class="mobile-order" onclick="orderWhatsApp()">
+    <span>◔</span> Заказ берүү
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
